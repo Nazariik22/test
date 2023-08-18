@@ -50,10 +50,18 @@ document.getElementsByClassName('currentcy')[0].onclick = (e) => {
             iteratorCarent = 36
             break;
         case '₴':
+            newcarentText = '€'
+            iteratorCarent = 0.9
+            break;
+        case '€':
             newcarentText = 'BYN'
             iteratorCarent = 10
             break;
         case 'BYN':
+            newcarentText = '¥'
+            iteratorCarent = 20
+            break;
+            case '¥':
             newcarentText = '$'
             iteratorCarent = 1
             break;
