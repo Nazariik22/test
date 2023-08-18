@@ -38,7 +38,7 @@ submitButton.addEventListener('click', (e) => {
 });
 document.getElementsByClassName('currentcy')[0].onclick = (e) => {
     let carentText = e.target.innerText;
-    let iteratorCarent = 1
+    let iteratorCarent = 1;
     let newcarentText;
     switch (carentText) {
         case '$':
@@ -61,7 +61,7 @@ document.getElementsByClassName('currentcy')[0].onclick = (e) => {
             newcarentText = '¥'
             iteratorCarent = 20
             break;
-            case '¥':
+        case '¥':
             newcarentText = '$'
             iteratorCarent = 1
             break;
@@ -70,9 +70,12 @@ document.getElementsByClassName('currentcy')[0].onclick = (e) => {
     }
     e.target.innerText = newcarentText;
     product.carentText = newcarentText;
-    product.state.map(item => item.price = item.price * iteratorCarent)
+    product.state.map(item => product.newiteratorCarent ?
+        item.price = Math.ceil(item.price * iteratorCarent
+            / product.newiteratorCarent)
+        : item.price = item.price * iteratorCarent);
     obgectBurger.render(section2, product.state, product.carentText)
-    product.state.forEach(item => item.price = item.price / iteratorCarent)
+    product.newiteratorCarent = iteratorCarent;
 }
 function scrollTop(element, index) {
     element.onclick = () => title[index].scrollIntoView({ behavior: "smooth" })

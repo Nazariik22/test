@@ -107,5 +107,6 @@ const product = {
         },
     ],
     carentText: "$",
+    newiteratorCarent:"",
 }
 export { adventege, product }
