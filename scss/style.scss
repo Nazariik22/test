@@ -75,6 +75,7 @@ header{
         color: white;
         font-size: 18px;
         font-weight: 600;
+        cursor: pointer;
     }
     a:hover{
         border-bottom: 2px solid;
@@ -280,4 +281,7 @@ footer{
         justify-content: space-between;
         align-items: center;
     }
+}
+.red{
+    border: 2px solid rgba(97, 11, 11, 0.783);
 }
