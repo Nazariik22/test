@@ -23,7 +23,7 @@ const progress = {
                 const element = document.createElement('div');
                 element.classList.add('section2_block');
                 element.innerHTML = `
-                <img src="${product[i].img}" alt="">
+                <img src="${product[i].img}" alt="" class="img_content">
                 <h3>${product[i]. title}</h3>
                 <p>${product[i].text}</p>
                 <div class="flex">

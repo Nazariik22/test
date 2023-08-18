@@ -207,6 +207,10 @@ h2 {
   font-weight: 300;
   margin: 8px 0 0 0;
 }
+.section2_block .img_content {
+  width: 322px;
+  height: 250px;
+}
 
 .flex {
   display: flex;
